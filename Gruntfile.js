@@ -51,8 +51,10 @@ module.exports = function (grunt) {
 
     // Task configuration.
     clean: {
+      options:{force: true},
       dist: 'dist',
-      docs: 'docs/dist'
+      docs: 'docs/dist',
+      dev: '../Player/public/dist'
     },
 
     jshint: {
@@ -287,6 +289,14 @@ module.exports = function (grunt) {
           '**/*'
         ],
         dest: 'docs/dist/'
+      },
+      dev: {
+        expand: true,
+        cwd: 'dist/',
+        src: [
+          '**/*'
+        ],
+        dest: '../Player/public/dist/'
       }
     },
 
@@ -530,4 +540,5 @@ module.exports = function (grunt) {
       done();
     });
   });
+  grunt.registerTask('dev', ['dist','clean:dev', 'copy:dev']);
 };
