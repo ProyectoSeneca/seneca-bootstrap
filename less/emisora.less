@@ -21,6 +21,12 @@ html, body {
   overflow:auto;
   padding-bottom:150px; /* this needs to be bigger than footer height*/
 }
+.no-padding{
+  padding: 0;
+}
+.seneca-project{
+  font-family: @font-family-radio;
+}
 
 //
 // Specific Classes
@@ -68,6 +74,8 @@ html, body {
 .centered-pills a {
   float:left;
   color: black;
+  text-transform: uppercase;
+  font-size: 13pt;
 }
 .nar-bar-divider-end {
   background-color: black;
@@ -76,7 +84,8 @@ html, body {
 .nar-bar-divider-end p {
   margin: 0;
   color: white;
-  letter-spacing: 3px;
+  letter-spacing: 10px;
+  font-size: 11pt;
 }
 
 // Footer
@@ -100,13 +109,114 @@ html, body {
   padding-top:10px;
 }
 
-
 // Images
 .logo-university {
   height: 35px;
   width: 30px;
 }
-
 .logo-radio {
   margin-top: 10px;
 }
+
+// Home
+.home-top-margin{
+  margin-top: 20px;
+}
+.home-content-wrap{
+  .no-padding;
+  margin-top: -11px;
+}
+.home-top-program{
+  display:inline-block;
+}
+.home-top-program h2{
+  margin: 0;
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 24pt;
+  letter-spacing: 5px;
+}
+.home-top-program h6 {
+  margin: 0;
+  float: right;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12pt;
+  letter-spacing: 4px;
+}
+.program-wrap{
+  padding: 0;
+}
+.program-wrap :hover {
+  background-color: black;
+  color: white;
+  transition: background-color 1.5s, color 1.5s;
+}
+.parallelogram {
+  width: 100%;
+  margin: 0 0 0 20px;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  border: 1px solid black;
+  background-color: transparent;
+}
+.parallelogram :hover
+{
+  background-color: transparent;
+}
+.program-wrap-content{
+  display:inline-block;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  background-color: transparent;
+}
+.program-wrap-content h3 {
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 0;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.program-wrap-content h6 {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 3px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 9pt;
+}
+.top-program {
+  padding-right: 20px;
+}
+.top-program-title{
+  margin-right: 20px;
+}
+.top-program-title h3{
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 21pt;
+}
+.top-program-title h6{
+  margin-top: 0;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 8pt;
+}
+.top-program-content p {
+  font-size: 20pt;
+  font-weight: lighter;
+  text-align: justify;
+  color: white;
+}
+.top-program-content span {
+  display: inline;
+  background: black;
+  box-shadow: 5px 0 0 black, -5px 0 0 black;
+}
+
