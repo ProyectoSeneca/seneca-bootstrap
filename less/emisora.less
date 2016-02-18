@@ -34,7 +34,7 @@ html, body {
 
 // Player Info
 .player-wrapper{
-  border: 1px solid darkred;
+  border: 1px solid @audio-color;
   height: 60px
 }
 
@@ -44,16 +44,33 @@ html, body {
 
 .player-name{
   margin-top: 16px;
-  border: 1px solid darkred
+  border: 1px solid @audio-color
 }
 
 .player-btn-wrapper{
   margin-top: 8px;
+  padding-left: 20px;
+  padding-right: 30px;
 }
 
 .player-btn {
-  background-color: darkred;
+  margin-top: 5px;
+  width: 100%;
+  border: 0;
+  background-color: @audio-color;
   color: white;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 12pt;
+  text-align: center;
+}
+.player-btn img{
+  .hidden-md;
+  .hidden-sm;
+  .hidden-xs;
+  margin-left: 3px;
+  margin-top: -2px;
 }
 
 // Nav Bar
@@ -129,7 +146,14 @@ html, body {
 .home-top-program{
   display:inline-block;
 }
+.home-top-program img{
+  margin: 0;
+  float: left;
+  padding-top: 15px;
+  padding-right: 10px;
+}
 .home-top-program h2{
+  float: right;
   margin: 0;
   padding-top: 10px;
   font-weight: bold;
