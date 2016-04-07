@@ -480,14 +480,20 @@ button:focus {outline:0;}
   cursor: pointer;
 }
 
-.programs-img {
-  height: 200px;
-  object-fit: cover;
+.programs-img-bg {
   background-color: black;
 }
 
+.programs-img {
+  height: 200px;
+  object-fit: cover;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
 .programs-img.dark {
-  opacity: 0.6;
+  opacity: 0.4;
+  transition: opacity 0.5s;
 }
 
 .programs-img-text {
@@ -521,8 +527,10 @@ button:focus {outline:0;}
   font-weight: lighter;
   letter-spacing: 0.2em;
   font-size: 14px;
+  transition: color 0.5s;
 }
 
 .programs-img-slogan.transparent {
   color: transparent;
+  transition: color 0.5s;
 }
