@@ -159,6 +159,7 @@ button:focus {outline:0;}
 }
 .home-top-program{
   display:inline-block;
+  cursor: pointer;
 }
 .home-top-program img{
   margin: 0;
@@ -183,13 +184,18 @@ button:focus {outline:0;}
   letter-spacing: 4px;
 }
 .program-wrap{
+  cursor: pointer;
   padding: 0;
 }
-.program-wrap :hover {
-  background-color: black;
-  color: white;
-  transition: background-color 1.5s, color 1.5s;
+
+.program-wrap:hover {
+  color: darkgrey;
 }
+
+.program-wrap.selected {
+  color: grey;
+}
+
 .parallelogram {
   width: 100%;
   margin: 0 0 0 20px;
@@ -199,10 +205,7 @@ button:focus {outline:0;}
   border: 1px solid black;
   background-color: transparent;
 }
-.parallelogram :hover
-{
-  background-color: transparent;
-}
+
 .program-wrap-content{
   display:inline-block;
   padding-left: 15px;
